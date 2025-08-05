@@ -1,0 +1,18 @@
+# Entorno
+.env
+
+# Node.js
+/node_modules/
+
+# Composer
+/vendor/
+
+# Build frontend
+/public/build/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Otros temporales
+*.log
