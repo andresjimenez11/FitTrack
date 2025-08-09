@@ -1,9 +1,9 @@
-<div class="contenedor">
-    <h1>FitTrack</h1>
-    <p>Crea y gestiona tus rutinas</p>
+<div class="contenedor login">
+    <h1 class="fittrack">FitTrack</h1>
+    <p class="tagline">Crea y gestiona tus rutinas</p>
 
     <div class="contenedor-sm">
-        <p class="descripcion-pagin">Iniciar Sesión</p>
+        <p class="descripcion-pagina">Iniciar Sesión</p>
 
         <form class="formulario" method="POST" action="/">
             <div class="campo">

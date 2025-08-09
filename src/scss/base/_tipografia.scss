@@ -16,6 +16,18 @@ h3 {
 }
 p {
     font-size: 2rem;
-    color: v.$gris;
+    color: v.$blanco;
     line-height: 1.8;
+}
+
+.tagline {
+    font-family: v.$fuente_headings;
+    font-weight: 700;
+    color: v.$blanco;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.descripcion-pagina {
+    text-align: center;
 }
