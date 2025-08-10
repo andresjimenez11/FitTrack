@@ -47,3 +47,19 @@
     gap: $espaciado;
     grid-template-columns: repeat($columnas, 1fr);
 }
+
+@mixin fittrack($color) {
+    background: linear-gradient(
+    to right,
+    $color 0%,
+    color.adjust($color, $lightness: 20%) 100%
+    );
+    color: transparent;
+    background-clip: text;
+    text-align: center;
+    font-size: 7rem;
+
+    @include tablet {
+        font-size: 10rem;
+    }
+}
