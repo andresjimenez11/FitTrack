@@ -1,0 +1,23 @@
+@use 'sass:color';
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.reestablecer {
+
+    margin-top: 5rem;
+
+    .fittrack {
+        @include m.fittrack(v.$naranja);
+    }
+
+
+    input[type="submit"] {
+        @include m.boton(v.$naranja, v.$blanco, 4rem, 0);
+    }
+
+    .acciones {
+        a {
+            color: color.adjust(v.$naranja, $lightness: 20%);
+        }
+    }
+}

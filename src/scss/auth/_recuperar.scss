@@ -1,0 +1,23 @@
+@use 'sass:color';
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.recuperar {
+
+    margin-top: 5rem;
+
+    .fittrack {
+        @include m.fittrack(v.$rosa);
+    }
+
+
+    input[type="submit"] {
+        @include m.boton(v.$rosa, v.$blanco, 4rem, 0);
+    }
+
+    .acciones {
+        a {
+            color: color.adjust(v.$rosa, $lightness: 20%);
+        }
+    }
+}

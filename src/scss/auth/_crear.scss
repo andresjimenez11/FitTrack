@@ -1,0 +1,23 @@
+@use 'sass:color';
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.crear {
+
+    margin-top: 5rem;
+
+    .fittrack {
+        @include m.fittrack(v.$morado);
+    }
+
+
+    input[type="submit"] {
+        @include m.boton(v.$morado, v.$blanco, 4rem, 0);
+    }
+
+    .acciones {
+        a {
+            color: color.adjust(v.$morado, $lightness: 20%);
+        }
+    }
+}

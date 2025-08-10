@@ -1,0 +1,43 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+@use 'sass:color';
+
+.formulario {
+    
+    margin-top: 3rem;
+    
+    .campo {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2rem;
+    
+        label {
+            flex: 0 0 11rem; // Medida fija 10rem horizontal
+            color: v.$blanco;
+        }
+
+        input {
+            flex: 1;
+            padding: 1rem;
+            border: none;
+            border-radius: 5px;
+            color: v.$blanco;
+            background-color: color.adjust(v.$azulmuyoscuro, $lightness: 10%);
+        }
+        input:focus {
+            outline: color.adjust(v.$azulmuyoscuro, $lightness: 70%);
+            border: none;
+        }
+        input::placeholder {
+            color: color.adjust(v.$gris, $lightness: 25%);
+        }
+        input::-ms-reveal,
+        input::-ms-clear {
+            display: none;
+        }
+        input::-webkit-credentials-auto-fill-button {
+            visibility: hidden;
+            display: none;
+        }
+    }
+}

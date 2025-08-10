@@ -1,0 +1,23 @@
+@use 'sass:color';
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.login {
+
+    margin-top: 5rem;
+
+    .fittrack {
+        @include m.fittrack(v.$cyan);
+    }
+
+
+    input[type="submit"] {
+        @include m.boton(v.$cyan, v.$blanco, 4rem, 0);
+    }
+
+    .acciones {
+        a {
+            color: color.adjust(v.$cyan, $lightness: 20%);
+        }
+    }
+}
