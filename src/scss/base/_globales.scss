@@ -7,21 +7,12 @@ html {
     font-size: 62.5%;
     box-sizing: border-box;
     height: 100%;
-    background: linear-gradient(
-        to bottom,
-        v.$azuloscuro,
-        v.$azulmuyoscuro,  
-    );
+    background: v.$azulmuyoscuro;
 }
 body {
-    background: linear-gradient(
-        to bottom,
-        v.$azuloscuro,
-        v.$azulmuyoscuro,  
-    );
     font-family: v.$fuente_textos;
     font-size: 1.6rem;
-    min-height: 100vh;
+    //min-height: 100vh;
 }
 .contenedor {
     width: 95%;
@@ -29,7 +20,7 @@ body {
     margin: 0 auto;
 }
 .contenedor-sm {
-    max-width: 60rem;
+    max-width: 68rem;
     margin: 0 auto;
 }
 a {

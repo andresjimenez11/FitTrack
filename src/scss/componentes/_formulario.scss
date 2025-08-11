@@ -2,6 +2,16 @@
 @use 'base/mixins' as m;
 @use 'sass:color';
 
+.contenedor-formulario {
+    padding: 2rem 5rem 8rem 5rem;
+    background: linear-gradient(
+        to bottom,
+        v.$azuloscuro,
+        v.$azulmuyoscuro,  
+    );
+    border-radius: 25px;
+}
+
 .formulario {
     
     margin-top: 3rem;
@@ -22,7 +32,7 @@
             border: none;
             border-radius: 5px;
             color: v.$blanco;
-            background-color: color.adjust(v.$azulmuyoscuro, $lightness: 10%);
+            background-color: color.adjust(v.$azulmuyoscuro, $lightness: 7%);
         }
         input:focus {
             outline: color.adjust(v.$azulmuyoscuro, $lightness: 70%);

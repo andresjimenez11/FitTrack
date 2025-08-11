@@ -1,7 +1,7 @@
 <div class="contenedor reestablecer">
     <?php include_once __DIR__ . '/../templates/nombre-sitio.php'; ?>
 
-    <div class="contenedor-sm">
+    <div class="contenedor-sm contenedor-formulario">
         <p class="descripcion-pagina">Crear Nueva Contraseña</p>
 
         <form class="formulario" method="POST" action="/">

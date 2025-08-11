@@ -50,9 +50,9 @@
 
 @mixin fittrack($color) {
     background: linear-gradient(
-    to right,
+    to bottom,
     $color 0%,
-    color.adjust($color, $lightness: 20%) 100%
+    color.adjust($color, $lightness: 20%) 70%
     );
     color: transparent;
     background-clip: text;
@@ -60,6 +60,6 @@
     font-size: 7rem;
 
     @include tablet {
-        font-size: 10rem;
+        font-size: 9rem;
     }
 }
