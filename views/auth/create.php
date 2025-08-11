@@ -4,7 +4,7 @@
     <div class="contenedor-sm contenedor-formulario">
         <p class="descripcion-pagina">Crear Cuenta</p>
 
-        <form class="formulario" method="POST" action="/">
+        <form class="formulario" method="POST" action="/crear">
             <div class="campo">
                 <label for="nombre">Nombre</label>
                 <input
@@ -12,6 +12,7 @@
                     id="nombre"
                     placeholder="Tu Nombre"
                     name="nombre"
+                    value="<?php echo $usuario->nombre ?>"
                 />
             </div>    
             <div class="campo">
@@ -21,6 +22,7 @@
                     id="email"
                     placeholder="Tu Email"
                     name="email"
+                    value="<?php echo $usuario->email ?>"
                 />
             </div>
             <div class="campo">
