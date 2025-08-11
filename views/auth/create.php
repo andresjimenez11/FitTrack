@@ -4,6 +4,8 @@
     <div class="contenedor-sm contenedor-formulario">
         <p class="descripcion-pagina">Crear Cuenta</p>
 
+        <?php include_once __DIR__ . '/../templates/alertas.php'; ?>
+
         <form class="formulario" method="POST" action="/crear">
             <div class="campo">
                 <label for="nombre">Nombre</label>

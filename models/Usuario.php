@@ -8,7 +8,6 @@ class Usuario extends ActiveRecord {
     public $id;
     public $nombre;
     public $email;
-    public $telefono;
     public $password;
     public $password2;
     public $token;
@@ -18,11 +17,10 @@ class Usuario extends ActiveRecord {
         $this->id = $args['id'] ?? null;
         $this->nombre = $args['nombre'] ?? '';
         $this->email = $args['email'] ?? '';
-        $this->telefono = $args['telefono'] ?? '';
         $this->password = $args['password'] ?? '';
         $this->password2 = $args['password2'] ?? '';
         $this->token = $args['token'] ?? '';
-        $this->confirmado = $args['confirmado'] ?? '';
+        $this->confirmado = $args['confirmado'] ?? 0;
     }
 
     public function validarNuevaCuenta() {
@@ -53,4 +51,11 @@ class Usuario extends ActiveRecord {
         return self::$alertas;
     }
  
+    public function hashPassword() {
+        $this->password = password_hash($this->password, PASSWORD_BCRYPT);
+    }
+
+    public function crearToken() {
+        $this->token = uniqid();
+    }
 }
