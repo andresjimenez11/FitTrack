@@ -4,7 +4,9 @@
     <div class="contenedor-sm contenedor-formulario">
         <p class="descripcion-pagina">Recuperar Contraseña</p>
 
-        <form class="formulario" method="POST" action="/">
+        <?php include_once __DIR__ . '/../templates/alertas.php'; ?>
+
+        <form class="formulario" method="POST" action="/recuperar" novalidate>
             <div class="campo">
                 <label for="email">Email</label>
                 <input

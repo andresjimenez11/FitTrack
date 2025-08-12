@@ -4,7 +4,11 @@
     <div class="contenedor-sm contenedor-formulario">
         <p class="descripcion-pagina">Crear Nueva Contraseña</p>
 
-        <form class="formulario" method="POST" action="/">
+        <?php include_once __DIR__ . '/../templates/alertas.php'; ?>
+
+        <?php if($mostrar) { ?>
+
+        <form class="formulario" method="POST" novalidate>
             
             <div class="campo">
                 <label for="password">Contraseña</label>
@@ -27,6 +31,8 @@
 
             <input type="submit" class="boton" value="Guardar Contraseña">
         </form>
+
+        <?php } ?>
         <div class="acciones">
             <a href="/crear">¿No tienes una cuenta? Crear Cuenta</a>
             <a href="/recuperar">¿Olvidaste tu contraseña?</a>
